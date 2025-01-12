@@ -18,7 +18,6 @@ if __name__ == "__main__":
         similarity = compare_faces(test_image1, test_image2, embedding_model)
         if similarity is not None:
             print(f"face similarity: {similarity:.4f}")
-            print(f"相似度閾值建議: 0.7 (大於此值可能是同一個人)")
 
     except Exception as e:
         print(f"Error: {str(e)}")
